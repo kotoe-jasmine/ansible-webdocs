@@ -14,8 +14,8 @@
   tasks:
 
     - name: get docs and examples for modules
-      ansible_docstring: path=/usr/share/ansible/files/
+      ansible_docstring: path=/vagrant/ansible_test/exec_aix_scripts.yml
       register: modules
 
     - name: build web/markdown ansible docs
-      template: src=templates/ansible-docs.j2 dest=web/ansiblefilesdoc.md
+      template: src=templates/ansible-docs.j2 dest=web/exec_aix_scripts.md
